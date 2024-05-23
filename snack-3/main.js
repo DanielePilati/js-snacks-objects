@@ -20,11 +20,13 @@ const animali = [
   },
 ];
 // Crea un nuovo array
-let mammiferi = [];
+let mammiferi = animali.filter((animale) => animale.classe === "mammiferi");
 //con la lista dei mammiferi.
+/*
 for (let i = 0; i < animali.length; i++) {
   if (animali[i].classe === "mammiferi") {
     mammiferi[i] = animali[i];
   }
 }
+*/
 console.log(mammiferi);
